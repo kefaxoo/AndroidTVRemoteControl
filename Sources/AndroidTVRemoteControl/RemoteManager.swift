@@ -17,7 +17,11 @@ public class RemoteManager {
     private let tlsManager: TLSManager
     
     private var data = Data()
-    private(set) var secondConfigurationResponse = SecondConfigurationResponse()
+    private var secondConfigurationResponse = SecondConfigurationResponse()
+    
+    var secondConfiguration: SecondConfigurationResponse {
+        self.secondConfigurationResponse
+    }
     
     public var stateChanged: ((RemoteState)->())?
     public var receiveData: ((Data?, Error?)->Void)?
