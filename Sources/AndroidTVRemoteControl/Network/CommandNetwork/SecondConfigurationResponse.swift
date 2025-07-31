@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct SecondConfigurationResponse {
-    private(set) var powerPart = false
-    private(set) var currentAppPart = false
-    private(set) var volumeLevelPart = false
+public struct SecondConfigurationResponse {
+    public var powerPart = false
+    public var currentAppPart = false
+    public var volumeLevelPart = false
     
-    private(set) var runAppName: String?
+    public var runAppName: String?
     
-    var modelName: String = ""
-    var readyFullResponse: Bool {
+    public var modelName: String = ""
+    public var readyFullResponse: Bool {
         return powerPart && currentAppPart && volumeLevelPart
     }
 
