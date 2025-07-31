@@ -19,7 +19,7 @@ public class RemoteManager {
     private var data = Data()
     private var secondConfigurationResponse = SecondConfigurationResponse()
     
-    var secondConfiguration: SecondConfigurationResponse {
+    public var secondConfiguration: SecondConfigurationResponse {
         self.secondConfigurationResponse
     }
     
